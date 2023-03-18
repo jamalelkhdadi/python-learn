@@ -18,4 +18,9 @@ jobs:
       run: python script.py
     - name: Test script
       run: pytest tests/
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: text.txt
 
